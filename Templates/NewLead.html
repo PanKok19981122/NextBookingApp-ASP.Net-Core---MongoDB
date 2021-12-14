@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #map {
+            height: 150px;
+            width: 300px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .button {
+            background-color: #49A6FC;
+            /* Green */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="background-color: #D9EDF8; width: auto; height: 40px; display: flex; align-items: center;">
+            <p style="color: #688597; margin-left: 20px; font-size: small; font-weight: 500;">New Customer Alert</p>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <p style="color: #818181; margin-left: 20px; font-size: small; font-weight: 600;">
+                {{FullName}} needs a Football
+                Coach
+            </p>
+        </div>
+
+        <div style="width: '100%'; display: flex; align-items: center;">
+            <!-- <i class="material-icons" style="font-size:14px; color:grey; margin-left: 20px;">location_on</i> -->
+            <img style="height: 10px; color:grey; margin-left: 20px; margin-top: 15px; align-self: center;"
+                 src="https://res.cloudinary.com/dwsvulcmm/image/upload/v1612451363/pngfind.com-marker-png-732203_xt85lr.png" />
+
+            <p style="color: #818181; margin-left: 5px; font-size: small;">{{Location}}</p>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <img style="height: 10px; color:grey; margin-left: 20px; margin-top: 15px; align-self: center;"
+                 src="https://res.cloudinary.com/dwsvulcmm/image/upload/v1612454685/call_knbqsk.png" />
+            <p style="color: #818181; margin-left: 5px; font-size: small;">{{Phone}}</p>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <img style="height: 10px; color:grey; margin-left: 20px; margin-top: 15px; align-self: center;"
+                 src="https://res.cloudinary.com/dwsvulcmm/image/upload/v1612454686/email_sdh1mu.png" />
+            <p style="color: #818181; margin-left: 5px; font-size: small;">{{EmailID}}</p>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <p style="color: #818181; margin-left: 20px; font-size: small;">1 Credit respond</p>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <img id="map" src="https://maps.googleapis.com/maps/api/staticmap?center={{LatLng}}&zoom=13&size=600x300&maptype=roadmap
+&markers=color:red%7Clabel:C%7C{{LatLng}}
+&key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE" />
+        </div>›››
+
+        <div style="width: auto; display: flex; align-items: center;">
+            <a href="https://mobileapi.nextlevelfootballtraining.co.uk/api/Main/AppLink">
+                <button class="button button2">Contact {{FullName}} Now</button>
+            </a>
+        </div>
+
+        <div style="width: auto; display: flex; align-items: center; width: 400px;">
+            <p style="color: #818181; margin-left: 20px; font-size: small; text-align: center;">
+                Let {{FullName}} know you are
+                interested and receive their contact details.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
